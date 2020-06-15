@@ -1,0 +1,60 @@
+git help: Muestra una lista con los comandos más utilizados en GIT.
+--------
+git init: Podemos ejecutar ese comando para crear localmente un repositorio con GIT y así 
+---------
+utilizar todo el funcionamiento que GIT ofrece.  Basta con estar ubicados dentro de la carpeta donde tenemos nuestro proyecto y ejecutar el comando.  Cuando agreguemos archivos y un commit, se va a crear el branch master por defecto.
+git add + path: Agrega al repositorio los archivos que indiquemos
+---------------
+git add . : Agrega a todos los archivos al repositorio
+-----------
+git add archivo: Agrega el archivo al repository
+----------------
+git status: Nos indica el estado del repositorio, por ejemplo cuales están modificados, cuales 
+-----------
+git push:  para subirlo a un repositorio remoto
+---------
+git commit:
+------------------------------------
+Hace commit a los archivos que indiquemos, de esta manera quedan guardados nuestras modificaciones.
+luegoo 
+tecleamos I añadimos el nombre y para salir Esc y :wq
+O SIMPLEMENTE
+$ git commit -m "añadimos el Nombre": para no entrar a la linea de codigo
+-------------------------------------
+git log: muestra la fecha de creacion del repositorio y cada commit(guardado) muestra 
+--------
+git diff archivo: Muestra los cambios que se hizo en el archivo lo qse quito y añadio
+-----------------
+git reset HEAD + Archivo : quitamos el archivo del repositorio al la area de preparacion
+--------------------------
+.gitignore: cramos un archivo dentro la carpeta q estamos utilizando con este nombre para que 
+-----------
+ Archivo que desees pueda bloquearse o no se puede leeer puede ser archivo o documento
+------------
+$ git checkout -- archivo : volvemos al archivo tal y como se guardo cuando modifique 
+---------------------------
+git checkout nombre del commit . : volvemos al commit que se guardo
+-------------------------------- 
+$ git branch:  Muestra las versiones que uno esta trabajando si yo quisiera aumentar una version 
+------------
+para modificar y trabajar se usa el comando de abajo
+
+$ git branch nombre: Añadimos una version 
+------------------
+$ git checkout nombre: cambiamos a la version deseada
+--------------------
+
+git remote add origin link: para dar acceso remoto  al repositorio de Github
+---------------------------
+
+$ git push -u origin master: para subir al repositorio que esta en Github
+----------------------------
+
+
+
+
+		Working directory    ----> Rojo    
+                ------------------               ----> git add archivo
+		staging area         ----> verde
+		------------------		 ----> git commit
+		Repository	     ----->
